@@ -13,17 +13,54 @@
     <!-- Main -->
     <main>
       <div class="container">
-        <div class="flex">
+        <h2>Parte 1</h2>
+        <div class="flex padding-top">
           <button id="student-btn">Visualizzare lo studente</button>
           <ul id="output1"></ul>
         </div>
 
+        <h2 class="padding-top">Parte 2</h2>
         <div class="flex padding-top">
-          <button id="class-btn">Visualizzare le matricole</button>
+          <button id="user-list-btn">Visualizzare le matricole</button>
           <ul id="output2"></ul>
         </div>
 
-        <div class="flex padding-top"></div>
+        <div class="flex flex-wrap padding-top">
+          <ul id="output-list"></ul>
+        </div>
+
+        <h2 class="padding-top">Parte 3</h2>
+        <div class="flex padding-top">
+          <div>
+            <label for="input-name"></label>
+            <input
+              type="text"
+              name="name"
+              id="input-name"
+              placeholder="Inserire il nome"
+            />
+          </div>
+          <div>
+            <label for="input-surname"></label>
+            <input
+              type="text"
+              name="surname"
+              id="input-surname"
+              placeholder="Inserire il cognome"
+            />
+          </div>
+          <div>
+            <label for="input-age"></label>
+            <input
+              type="number"
+              name="age"
+              id="input-age"
+              placeholder="Inserire l'età"
+            />
+          </div>
+
+          <button id="input-btn">Aggiungi utente</button>
+        </div>
       </div>
     </main>
     <!-- End Main -->
