@@ -21,15 +21,84 @@ $(document).ready(function () {
   var studente = {
     name: "Catalin",
     surname: "Zahariea",
-    age: 27,
+    age: 28,
   };
 
+  var classeStudenti = [
+    {
+      name: "Catalin",
+      surname: "Zahariea",
+      age: 28,
+    },
+    {
+      name: "Dario",
+      surname: "Oricchio",
+      age: 14,
+    },
+    {
+      name: "Carlo",
+      surname: "Oricchio",
+      age: 11,
+    },
+    {
+      name: "Valentina",
+      surname: "De Angelis",
+      age: 27,
+    },
+    {
+      name: "Eliza",
+      surname: "Sestov",
+      age: 52,
+    },
+    {
+      name: "Lana",
+      surname: "Zahariea",
+      age: 4,
+    },
+    {
+      name: "Tito",
+      surname: "Zahariea",
+      age: 3,
+    },
+    {
+      name: "Tigro",
+      surname: "Zahariea",
+      age: 2,
+    },
+  ];
+
   $("#student-btn").click(function () {
-    if ($("#output").html() != "") {
-      $("#output").html("");
+    if ($("#output1").html() != "") {
+      $("#output1").html("");
     } else {
       for (var key in studente) {
-        $("#output").append("<li>" + key + ": " + studente[key] + "</li>");
+        $("#output1").append("<li>" + key + ": " + studente[key] + "</li>");
+      }
+    }
+  });
+
+  $("#class-btn").click(function () {
+    if ($("#output2").html() != "") {
+      $("#output2").html("");
+    } else {
+      for (var i = 0; i < classeStudenti.length; i++) {
+        console.log(classeStudenti[i]);
+        for (var key in classeStudenti[i]) {
+          console.log("chiave: " + key);
+          if (key == "name") {
+            key = "name";
+            var key2 = "surname";
+            $("#output2").append(
+              "<li>" +
+                "Nome: " +
+                classeStudenti[i][key] +
+                "<br>" +
+                "Cognome: " +
+                classeStudenti[i][key2] +
+                "</li>"
+            );
+          }
+        }
       }
     }
   });

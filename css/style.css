@@ -10,6 +10,13 @@ ul {
   list-style: none;
 }
 
+li {
+  border: 1px solid #ededed;
+  font-size: 12px;
+  padding: 10px;
+  display: block;
+}
+
 /* COMMON */
 
 .container {
@@ -21,8 +28,12 @@ ul {
 
 .flex {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+}
+
+.padding-top {
+  padding-top: 20px;
 }
 
 /* FONT */
@@ -34,7 +45,8 @@ body {
 
 /* MAIN */
 
-#student-btn {
+#student-btn,
+#class-btn {
   font-size: 12px;
   color: #000;
   padding: 20px;
@@ -43,8 +55,19 @@ body {
   border-radius: 5px;
 }
 
-#student-btn:active {
+#student-btn:active,
+#class-btn:active {
   background-color: #fff;
   border: 1px solid #ededed;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#matricola-number {
+  font-size: 12px;
+  width: 30em;
+  color: #000;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ededed;
+  border-radius: 5px;
 }
