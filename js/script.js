@@ -83,22 +83,16 @@ $(document).ready(function () {
     } else {
       for (var i = 0; i < classeStudenti.length; i++) {
         console.log(classeStudenti[i]);
-        for (var key in classeStudenti[i]) {
-          console.log("chiave: " + key);
-          if (key == "name") {
-            key = "name";
-            var key2 = "surname";
-            $("#output2").append(
-              "<li>" +
-                "Nome: " +
-                classeStudenti[i][key] +
-                "<br>" +
-                "Cognome: " +
-                classeStudenti[i][key2] +
-                "</li>"
-            );
-          }
-        }
+
+        $("#output2").append(
+          "<li>" +
+            "Nome: " +
+            classeStudenti[i]["name"] +
+            "<br>" +
+            "Cognome: " +
+            classeStudenti[i]["surname"] +
+            "</li>"
+        );
       }
     }
   });
