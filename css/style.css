@@ -1,0 +1,50 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+/* COMMON */
+
+.container {
+  max-width: 990px;
+  padding: 50px;
+  margin: 50px auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* FONT */
+
+body {
+  font-family: sans-serif;
+  font-weight: 300;
+}
+
+/* MAIN */
+
+#student-btn {
+  font-size: 12px;
+  color: #000;
+  padding: 20px;
+  background-color: #ededed;
+  border: none;
+  border-radius: 5px;
+}
+
+#student-btn:active {
+  background-color: #fff;
+  border: 1px solid #ededed;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
